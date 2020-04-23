@@ -1,4 +1,4 @@
- import os # Interaction with our os
+import os # Interaction with our os
  
 class Config:
     '''
@@ -15,7 +15,7 @@ class ProdConfig(Config):
 class DevConfig(Config):
     DEBUG = True
     
-Config_options = { #Dict
-    'development': DevConfig
-    'production': ProdConfig
+config_options = { #Dict
+'development': DevConfig,
+'production': ProdConfig
 } 
