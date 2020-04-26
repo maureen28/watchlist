@@ -63,7 +63,8 @@ def get_movie(id):
     return movie_object
 
 def search_movie(movie_name):
-    search_movie_url = 'https://api.themoviedb.org/3/search/movie?api_key={}&query={}'.format(api_key,movie_name)
+    search_movie_url = 'https://www.themoviedb.org/?api_key={}&query={}'.format(api_key, movie_name)
+    
     with urllib.request.urlopen(search_movie_url) as url:
         search_movie_data = url.read()
         search_movie_response = json.loads(search_movie_data)
