@@ -2,6 +2,7 @@ class Movie:
     '''
     Movie class to define Movie Objects
     '''
+
     def __init__(self,id,title,overview,poster,vote_average,vote_count):
         self.id =id
         self.title = title
@@ -10,6 +11,8 @@ class Movie:
         self.vote_average = vote_average
         self.vote_count = vote_count
 
+
+        
 class Review:
 
     all_reviews = []

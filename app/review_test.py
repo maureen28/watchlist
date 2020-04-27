@@ -1,6 +1,7 @@
  
 import unittest
-from app.models import Review
+from models import review
+Review = review.Review
 
 class TestReview(unittest.TestCase):
 
@@ -28,7 +29,11 @@ class TestReview(unittest.TestCase):
 
 
     def test_get_review_by_id(self):
-
+        
         self.new_review.save_review()
         got_reviews = Review.get_reviews(12345)
         self.assertTrue(len(got_reviews) == 1)
+
+
+if __name__ == '__main__':
+    unittest.main()
