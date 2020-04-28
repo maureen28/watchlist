@@ -2,6 +2,7 @@
 
 ## Description
 Flask web application that allows the user to create and save movie watchlists. Communicates with The Movie Database Api (https://www.themoviedb.org) to retreive film data. Website is still under construction. 
+<img src='/Screenshot from 2020-04-28 10-03-24.jpg' alt='Movie posters' width='1000px'>
 
 ## Author
 Maureen Wairimu
